@@ -15,5 +15,10 @@ public class Livro {
     private String isbn;
     private int numeroExemplares;
 
+
+
+
+
     // Getters and setters omitted for brevity
+    // foi criado a entidade livro.
 }
