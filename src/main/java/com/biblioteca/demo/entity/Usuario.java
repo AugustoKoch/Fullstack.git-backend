@@ -15,5 +15,5 @@ public class Usuario {
     private String senha;
     private String role;
 
-    // Getters and setters omitted for brevity
+    // mais um commit 
 }
