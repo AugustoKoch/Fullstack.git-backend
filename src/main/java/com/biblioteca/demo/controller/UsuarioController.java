@@ -40,8 +40,6 @@ public class UsuarioController {
             Usuario updatedUsuario = usuario.get();
             updatedUsuario.setNome(usuarioDetails.getNome());
             updatedUsuario.setEmail(usuarioDetails.getEmail());
-            updatedUsuario.setSenha(usuarioDetails.getSenha());
-            updatedUsuario.setRole(usuarioDetails.getRole());
             return ResponseEntity.ok(usuarioService.save(updatedUsuario));
         } else {
             return ResponseEntity.notFound().build();
