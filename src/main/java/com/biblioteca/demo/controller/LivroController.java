@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/livros")
+@CrossOrigin("*") 
 public class LivroController {
 
     @Autowired
@@ -39,8 +40,6 @@ public class LivroController {
             Livro updatedLivro = livro.get();
             updatedLivro.setTitulo(livroDetails.getTitulo());
             updatedLivro.setAutor(livroDetails.getAutor());
-            updatedLivro.setIsbn(livroDetails.getIsbn());
-            updatedLivro.setNumeroExemplares(livroDetails.getNumeroExemplares());
             return ResponseEntity.ok(livroService.save(updatedLivro));
         } else {
             return ResponseEntity.notFound().build();
