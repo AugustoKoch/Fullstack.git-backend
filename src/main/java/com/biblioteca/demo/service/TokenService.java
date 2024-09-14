@@ -1,4 +1,4 @@
-package com.biblioteca.demo.security;
+package com.biblioteca.demo.service;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
