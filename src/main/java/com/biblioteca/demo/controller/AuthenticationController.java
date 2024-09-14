@@ -5,7 +5,7 @@ import com.biblioteca.demo.entity.user.LoginResponseDTO;
 import com.biblioteca.demo.entity.user.RegisterDTO;
 import com.biblioteca.demo.entity.user.User;
 import com.biblioteca.demo.repository.UserRepository;
-import com.biblioteca.demo.security.TokenService;
+import com.biblioteca.demo.service.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
